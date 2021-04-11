@@ -25,6 +25,7 @@ public class Main
 	}
 	java.util.Arrays.sort(d);
 	System.out.println(Arrays.toString(d));
+		System.out.println(d[a-1]);
 	}
 		 
 }
