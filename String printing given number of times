@@ -1,0 +1,48 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+     
+     Scanner sc = new Scanner (System.in);
+     String h = sc.nextLine();
+  String [] a = h.split(",");
+  
+   for (String v: a){
+    System.out.println(v);
+     System.out.println(a.length);
+  }
+  String s = "" ;
+   char g = ' ' ;
+      String d = "" ;
+      char j = ' ' ;
+         int f = 0 ;
+       char m = '5' ;
+       String b = String.valueOf(m);
+ // for (String n: a){
+    System.out.println(b);
+ // }
+  for (int i = 0 ; i< a.length ; i++){
+      
+    s =   a[i];
+    
+  g = s.charAt(0);
+ // System.out.println(s);
+    d =   a[i];
+  //   System.out.println(d);
+ j = d.charAt(1);
+       //System.out.println(j);
+  // System.out.println(s);
+  f = Integer.valueOf(String.valueOf(j));
+       // System.out.print(f);
+    for (int k = 0 ; k< f ; k++){
+         System.out.print(g);
+    }
+       System.out.println(" ");
+      
+  }
+     
+     
+     
+     
+     }
+}
