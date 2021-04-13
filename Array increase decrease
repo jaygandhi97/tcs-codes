@@ -1,0 +1,33 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+int [] a = {1,5,6,7,8,9, 10};
+ 
+int [] h = new int [a.length];
+int [] b = new int [a.length];
+
+
+  
+System.out.println(Arrays.toString(h));
+java.util.Arrays.sort(a);
+         System.out.println(Arrays.toString(a));
+               System.out.println(Arrays.toString(b));
+System.out.println("a" + Arrays.toString(a));
+for (int i =0; i <  h.length; i++){
+     //System.out.println(a[3]) ;
+ 
+if (i%2 == 0) {
+    b[i] = a[i/2];
+    
+}else {
+    int j = i/2;
+    System.out.println(j);
+   b[i] = a[6- j];
+}
+  
+
+    
+}
+          System.out.println(Arrays.toString(b));
+     }}
