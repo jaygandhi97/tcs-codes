@@ -1,0 +1,64 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+         
+         String s = "animation";
+         int y = s.length();
+         char t = ' ' ;
+         int k = 0;
+         char[]  f = s.toCharArray();
+         HashMap <Character, Integer> a = new HashMap();
+         a.put ('j' , 1 );
+         for (int i =0 ;i < f.length ; i++){
+            t = s.charAt(i);
+              if (   t == 'a' ||  t ==  'e' ||   t == 'i' ||   t == 'o' ||  t ==  'u' ){
+                  k = k +1;
+                  
+              }
+             
+             
+         //for (Map.Entry<Character, Integer> set : a.entrySet()){
+          if (a.get(s.charAt(i)) != null){
+              
+               a.put(s.charAt(i) , a.get(s.charAt(i)) +1 ) ;
+                 
+         }
+         else {
+             
+             a.put (s.charAt(i) , 1);
+         }
+          
+    
+          //   System.out.println(set.getKey());
+              //   System.out.println(set.getValue());
+             
+         }
+         
+         for (Map.Entry <Character, Integer> q : a.entrySet()  ){
+            System.out.println( q.getKey() +" " + q.getValue()); 
+         }
+         y =y - k +1;
+         y = fact (y);
+         
+System.out.println(k);
+System.out.println(y);
+
+for (Map.Entry <Character, Integer> p : a.entrySet()){
+    
+    y = y /fact(p.getValue());
+}
+System.out.println(y * fact(k));
+
+
+
+
+
+
+
+     }static int fact (int x){
+           if (x>1){ 
+         return    x * fact(x - 1);
+                       }
+           else return 1;
+        }}
