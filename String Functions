@@ -1,0 +1,33 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+         char []  c = new char [] {'A', 'B' , 'C' , 'D' };
+       String s = " Hello";
+       String g = "JSfdg";
+       String d = "Hello";
+       System.out.println(s.compareTo(d));//returns 0 if both equal
+       System.out.println(s.compareToIgnoreCase(d));// returns 
+       s.concat("dgfdg");
+       System.out.println(s);
+       System.out.println(s.contains("ell"));//returns if it contains ell
+       System.out.println(s.contentEquals("Hello"));
+String h = " " ;
+h = h.copyValueOf(c, 0 ,3);
+System.out.println("Returned String: " + h);
+System.out.println(s.equals(g));
+       System.out.println(s.equalsIgnoreCase(g));
+       System.out.println(s.endsWith("ll"));
+       //to;lower case
+     //  upper case trim
+      // replace
+             System.out.println(s.substring(0, 3));
+       
+     }
+     
+     
+     
+     
+     
+     
+}
