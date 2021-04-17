@@ -1,0 +1,28 @@
+import java.util.*;
+public class MyClass{
+public static void main (String args []){
+
+    String a = "morning";
+    String b = "bring";
+    char [] s = b.toCharArray();
+    char [] d  = a.toCharArray();
+    
+    for (int i = 0 ; i < d.length ; i++){
+        for (int j = 0 ; j < s.length ; j++)
+        if (d[i] == s[j]){
+            s[j]  = '@';
+            d[i] = '@';
+            
+        }
+        
+        
+    }int k =0 ;
+    for (char j : d){
+        if (j == '@'){
+            k =k +1;
+        }
+    }
+    System.out.println(b.copyValueOf(s));
+    System.out.println(b.copyValueOf(d));
+      System.out.println(a.length() - k);
+}}
